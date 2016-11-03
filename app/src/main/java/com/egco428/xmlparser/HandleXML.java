@@ -89,8 +89,7 @@ public class HandleXML {
                     xmlFactoryObject = XmlPullParserFactory.newInstance();
                     XmlPullParser myparser = xmlFactoryObject.newPullParser();
 
-                    myparser.setFeature(XmlPullParser.FEATURE_PROCESS_NAMESPACES
-                            , false);
+                    myparser.setFeature(XmlPullParser.FEATURE_PROCESS_NAMESPACES, false);
                     myparser.setInput(stream, null);
                     parseXMLAndStoreIt(myparser);
                     stream.close();
