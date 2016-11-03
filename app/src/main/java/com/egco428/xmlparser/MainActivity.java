@@ -31,11 +31,11 @@ public class MainActivity extends AppCompatActivity {
 
         obj = new HandleXML(finalUrl);
         obj.fetchXML();
-        while (obj.parsingComplete){
-            country.setText(obj.getCountry());
-            temperature.setText(obj.getTemperature());
-            humidity.setText(obj.getHumidity());
-            pressure.setText(obj.getPressure());
-        }
+        while (obj.parsingComplete);
+        country.setText(obj.getCountry());
+        temperature.setText(obj.getTemperature());
+        humidity.setText(obj.getHumidity());
+        pressure.setText(obj.getPressure());
+
     }
 }

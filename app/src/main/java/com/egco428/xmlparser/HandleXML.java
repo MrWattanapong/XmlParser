@@ -41,7 +41,7 @@ public class HandleXML {
             event = myParser.getEventType();
             while (event != XmlPullParser.END_DOCUMENT) {
                 String name=myParser.getName();
-                event = myParser.next();
+
                 switch (event){
                     case XmlPullParser.START_TAG:
                         if (name.equals(humidity)){
